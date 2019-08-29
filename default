@@ -10,6 +10,8 @@ upstream project{
 server {
     listen 443;
 
+    server_name <YOUR-DOMAIN> www.<YOUR-DOMAIN>
+
     ssl on;
     ssl_certificate /home/ssl-kamisetaskustom/kamisetaskustom.com.pem;
     ssl_certificate_key /home/ssl-kamisetaskustom/kamisetaskustom.com.key;

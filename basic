@@ -4,6 +4,9 @@ upstream project{
 
 server {
     listen 80;
+
+    server_name <YOUR-DOMAIN> www.<YOUR-DOMAIN>
+
     gzip on;
     gzip_comp_level 6;
     gzip_vary on;
