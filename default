@@ -1,11 +1,10 @@
 server {
    listen 80;
-   return 301 https://kamisetaskustom.com$request_uri;
+   return 301 https://localhost:8000$request_uri;
 }
 
-# Redirige a ssl
 upstream project{
-    server 35.156.184.202:8000;
+    server localhost:8000;
 }
 
 server {
