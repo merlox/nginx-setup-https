@@ -14,11 +14,10 @@ apt-get update
 apt-get install python-certbot-nginx
 ```
 
-
 3. Setup your nginx server and install the certificate:
 
 ```
-sudo nginx restart
+sudo service nginx restart
 sudo certbot --nginx -d <YOUR-DOMAIN>.com -d www.<YOUR-DOMAIN>.com
 ```
 
