@@ -22,3 +22,11 @@ sudo certbot --nginx -d <YOUR-DOMAIN>.com -d www.<YOUR-DOMAIN>.com
 ```
 
 4. That's it! You now should have SSL enabled. Remember to setup pm2 to have a node.js server running all the time.
+
+5. To auto-renew the certificates add a cronjob by doing the following:
+- Run: 
+```crontab -e```
+- Then do:
+```0 12 * * * certbot renew```
+
+That will check every day at 12pm and update if necessary. Check this tab generator to verify it: https://crontab.guru/#0_12_*_*_*
