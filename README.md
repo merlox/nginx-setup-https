@@ -1,5 +1,15 @@
 # Nginx minimalistic configuration guide
 
+UPDATE: Now you can simply install the https util like so in 1 step:
+
+```
+sudo apt install python3-certbot-nginx
+```
+
+Note the python3.
+
+End update.
+
 First off all, you need a domain pointing to your VPS to activate SSL.
 
 To setup SSL follow these steps:
