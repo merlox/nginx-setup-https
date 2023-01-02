@@ -6,6 +6,12 @@ UPDATE: Now you can simply install the https util like so in 1 step:
 sudo apt install python3-certbot-nginx
 ```
 
+Then execute the utility with:
+
+```
+certbot
+```
+
 Note the python3.
 
 End update.
